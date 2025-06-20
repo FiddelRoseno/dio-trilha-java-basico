@@ -1,51 +1,56 @@
-# ContaBanco 🏦
+# Projeto ContaBanco 🏦
 
-Projeto desenvolvido como parte de um desafio de sintaxe Java, simulando a criação de uma conta bancária via terminal.
+Este projeto Java simula a criação de uma conta bancária através de uma aplicação de console interativa. Desenvolvido como parte de um desafio de sintaxe Java, ele demonstra conceitos fundamentais de entrada e saída de dados, manipulação de strings e validação de informações. 🚀
 
-## 🚀 Descrição
+## Funcionalidades ✨
 
-O **ContaBanco** é uma aplicação simples em Java que coleta informações de abertura de conta diretamente no console, com validação de entrada para garantir dados consistentes.
+-   **Coleta de Dados Interativa:** Solicita ao usuário informações essenciais para a criação da conta, como número da conta, agência, nome do cliente e saldo inicial.
+-   **Validação de Entrada Robusta:** Garante que os dados inseridos sigam formatos específicos:
+    -   **Número da Conta:** Validação para o formato `XXXXX-X` (5 dígitos, hífen, 1 dígito).
+    -   **Agência:** Validação para o formato `XXXX` (4 dígitos numéricos).
+    -   **Saldo:** Aceita valores numéricos (com ponto ou vírgula como separador decimal) e verifica se o saldo não é negativo.
+-   **Mensagem de Boas-Vindas Personalizada:** Após a coleta e validação dos dados, exibe uma mensagem de agradecimento e confirmação com todas as informações da nova conta.
 
-O usuário fornece:
+## Como Executar o Projeto ▶️
 
-- Número da Conta (formato `XXXXX-X`)
-- Número da Agência (formato `XXXX`)
-- Nome do Cliente
-- Saldo inicial
+Para compilar e executar este projeto, siga os passos abaixo:
 
-Após a coleta, o sistema exibe uma mensagem de boas-vindas personalizada com os dados informados.
+1.  **Pré-requisitos:**
+    -   Certifique-se de ter o Java Development Kit (JDK) instalado em sua máquina (versão 11 ou superior é recomendada).
 
-## 🎯 Funcionalidades
+2.  **Clone o Repositório (se ainda não o fez):**
+    ```bash
+    git clone https://github.com/FiddelRoseno/dio-trilha-java-basico.git
+    ```
 
-- Coleta interativa de dados
-- Validação robusta de:
-  - Número da Conta
-  - Agência
-  - Saldo (não pode ser negativo ou inválido)
-- Manipulação de strings e I/O com `Scanner`
-- Mensagem personalizada de abertura de conta
+3.  **Navegue até o Diretório do Projeto:**
+    ```bash
+    cd dio-trilha-java-basico/ContaBanco/src/main/java/ContaTerminal
+    ```
 
-## 🛠 Tecnologias Utilizadas
+4.  **Compile o Código:**
+    ```bash
+    javac ContaTerminal.java
+    ```
 
-- Java (JDK 17 ou superior recomendado)
-- IDE de sua preferência (IntelliJ, Eclipse, VSCode...)
+5.  **Execute a Aplicação:**
+    ```bash
+    java ContaTerminal
+    ```
 
-## 💻 Como executar
+    O programa solicitará as informações da conta passo a passo no terminal.
 
-1️⃣ Clone o repositório:
+## Tecnologias Utilizadas 💻
 
-```bash
-git clone https://github.com/seu-usuario/ContaBanco.git
+-   **Java**
+-   **`java.util.Scanner`**: Para entrada de dados via console.
+-   **`java.util.regex.Pattern`**: Para validação de formatos usando Expressões Regulares.
+-   **`String.format`**: Para formatação da mensagem de saída.
 
-📚 Aprendizados
-Manipulação de entrada de dados com Scanner
+## Autor 🧑‍💻
 
-Validação de strings com expressões regulares (Regex)
+-   [Fiddel Roseno] (https://github.com/FiddelRoseno)
 
-Estruturas condicionais e controle de fluxo
+---
 
-Boas práticas de formatação e exibição de mensagens
 
-🔖 Status do projeto
-✅ Finalizado
-🚀 Aberto para melhorias e sugestões!
